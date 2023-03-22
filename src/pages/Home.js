@@ -1,8 +1,10 @@
 import Nav from "../components/Nav";
+import Partners from "../components/Partners";
 import Search from "../components/Search";
 
 function Home() {
   return (
+    <>
     <header>
         <Nav />
         <div>
@@ -27,6 +29,10 @@ function Home() {
             </ul>
         </div>
     </header>
+    <main>
+        <Partners />
+    </main>
+    </>
   )
 }
 
