@@ -1,5 +1,5 @@
 // icons
-import chevron from '../assets/next-arrow-icon.png';
+import chevron from '../assets/chevron-right.png';
 import pen from '../assets/pen.png';
 import brackets from '../assets/brackets.png';
 import bag from '../assets/bag.png';

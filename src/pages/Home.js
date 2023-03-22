@@ -1,5 +1,6 @@
 // components
 import Categories from "../components/Categories";
+import JobListing from "../components/JobListing";
 import Nav from "../components/Nav";
 import Partners from "../components/Partners";
 import Search from "../components/Search";
@@ -36,6 +37,7 @@ function Home() {
         <Partners />
         <Categories />
         <Trending />
+        <JobListing />
     </main>
     </>
   )
