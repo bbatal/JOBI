@@ -1,6 +1,9 @@
+// components
+import Categories from "../components/Categories";
 import Nav from "../components/Nav";
 import Partners from "../components/Partners";
 import Search from "../components/Search";
+import Trending from "../components/Trending";
 
 function Home() {
   return (
@@ -31,6 +34,8 @@ function Home() {
     </header>
     <main>
         <Partners />
+        <Categories />
+        <Trending />
     </main>
     </>
   )
