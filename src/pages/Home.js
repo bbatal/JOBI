@@ -2,6 +2,7 @@
 import AboutUs from "../components/AboutUs";
 import Categories from "../components/Categories";
 import HowItWorks from "../components/HowItWorks";
+import JobiGuides from "../components/JobiGuides";
 import JobListing from "../components/JobListing";
 import Nav from "../components/Nav";
 import Partners from "../components/Partners";
@@ -44,6 +45,7 @@ function Home() {
         <HowItWorks />
         <AboutUs />
         <Testimonials />
+        <JobiGuides />
     </main>
     </>
   )
