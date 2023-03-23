@@ -3,6 +3,7 @@ import AboutUs from "../components/AboutUs";
 import Banner from "../components/Banner";
 import Categories from "../components/Categories";
 import Collaboration from "../components/Collaboration";
+import Footer from "../components/Footer";
 import HowItWorks from "../components/HowItWorks";
 import JobiGuides from "../components/JobiGuides";
 import JobListing from "../components/JobListing";
@@ -51,6 +52,9 @@ function Home() {
         <Collaboration />
         <Banner />
     </main>
+    <footer>
+        <Footer />
+    </footer>
     </>
   )
 }
