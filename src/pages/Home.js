@@ -1,4 +1,5 @@
 // components
+import AboutUs from "../components/AboutUs";
 import Categories from "../components/Categories";
 import HowItWorks from "../components/HowItWorks";
 import JobListing from "../components/JobListing";
@@ -40,6 +41,7 @@ function Home() {
         <Trending />
         <JobListing />
         <HowItWorks />
+        <AboutUs />
     </main>
     </>
   )
