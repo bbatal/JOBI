@@ -6,6 +6,7 @@ import JobListing from "../components/JobListing";
 import Nav from "../components/Nav";
 import Partners from "../components/Partners";
 import Search from "../components/Search";
+import Testimonials from "../components/Testimonials";
 import Trending from "../components/Trending";
 
 function Home() {
@@ -42,6 +43,7 @@ function Home() {
         <JobListing />
         <HowItWorks />
         <AboutUs />
+        <Testimonials />
     </main>
     </>
   )
