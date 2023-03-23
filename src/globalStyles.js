@@ -60,6 +60,30 @@ const GlobalStyle = createGlobalStyle`
         font-family: "Gordita"
     }
 
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    /* responsive image */
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    .wrapper {
+        max-width: 1200px;
+        width: 90%;
+        margin: 0 auto;
+    }
+
 `;
 
 export default GlobalStyle;
