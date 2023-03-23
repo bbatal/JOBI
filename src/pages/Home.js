@@ -1,5 +1,6 @@
 // components
 import AboutUs from "../components/AboutUs";
+import Banner from "../components/Banner";
 import Categories from "../components/Categories";
 import Collaboration from "../components/Collaboration";
 import HowItWorks from "../components/HowItWorks";
@@ -48,6 +49,7 @@ function Home() {
         <Testimonials />
         <JobiGuides />
         <Collaboration />
+        <Banner />
     </main>
     </>
   )
