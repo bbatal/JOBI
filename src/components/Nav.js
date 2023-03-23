@@ -7,6 +7,7 @@ import { useState } from 'react';
 
 function Nav() {
     const [open, setOpen] = useState(true);
+    // TODO -- make animation and background fade
 
   return (
     <div className='wrapper'>
@@ -15,29 +16,34 @@ function Nav() {
         <Hamburger onClick={() => setOpen(prev => !prev)}>HAM</Hamburger>
         
         {open &&
+        <>
         <Ul>       
-            <li>
+            <Li>
                 <a href='#'>Home</a>
-            </li>
-            <li>
+            </Li>
+            <Li>
                 <a href='#'>Job</a>
-            </li>
-            <li>
+            </Li>
+            <Li>
                 <a href='#'>Explore</a>
-            </li>
-            <li>
+            </Li>
+            <Li>
                 <a href='#'>Category</a>
-            </li>
-            <li>
+            </Li>
+            <Li>
                 <a href='#'>Pages</a>
-            </li>
-            <li>
-                <button>Login/Sign up</button>
-            </li>
-            <li>
-                <button>Post a Job</button>
-            </li>
+            </Li>
         </Ul>
+
+        <Ul2>
+            <Li>
+                <button>Login/Sign up</button>
+            </Li>
+            <Li>
+                <button>Post a Job</button>
+            </Li>
+        </Ul2>
+        </>
         }
 
     </Navigation>
@@ -50,6 +56,10 @@ export default Nav
 const Navigation = styled.nav`
     display: flex;
     justify-content: space-between;
+    align-items: center;
+
+    /* spacing */
+    padding: 1rem 0;
 `
 
 const Hamburger = styled.button`
@@ -83,4 +93,25 @@ const Ul = styled.ul`
         bottom: 0;
         z-index: 15;
     }
+`
+
+const Ul2 = styled.ul`
+    display: flex;
+
+    @media (max-width: 700px) {
+        flex-direction: column;
+        align-items: end;
+        gap: 1.1em;
+
+        position: absolute;
+        top: 36%;
+        left: 35%;
+        right: 0;
+        bottom: 0;
+        z-index: 20;
+    }
+`
+
+const Li = styled.li`
+    margin: 0 0.3rem;
 `
