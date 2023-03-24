@@ -42,22 +42,35 @@ const GlobalStyle = createGlobalStyle`
         --secondary-brown: #755146;
         --secondary-black: #000;
         --secondary-green: #31795a;
+
+        --tertiary-lightGray: #f5f5f5;
     }
 
     h1, 
     h2, 
     h3 {
         font-family: "EB Garamond";
+        position: relative;
+        z-index: 15;
+        padding: 0;
+        margin: 0;
     }
+
 
     h4,
     h5,
     h6 {
         font-family: "GorditaBold";
+        position: relative;
+        z-index: 15;
+        padding: 0;
+        margin: 0;
     }
 
     p {
-        font-family: "Gordita"
+        font-family: "Gordita";
+        position: relative;
+        z-index: 15;
     }
 
     a {
