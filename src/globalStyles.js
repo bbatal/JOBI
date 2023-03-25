@@ -36,6 +36,7 @@ const GlobalStyle = createGlobalStyle`
         --primary-darkGreen: #244034;
         --primary-lightGreen: #d2f34c;
         --primary-grassGreen: #00bf58;
+        --primary-gray: #c4c4c4;
 
         --secondary-gray: #eff6f3;
         --secondary-beige: #f8fde4;
