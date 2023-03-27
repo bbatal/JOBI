@@ -98,6 +98,17 @@ const GlobalStyle = createGlobalStyle`
         margin: 0 auto;
     }
 
+    /* temporary global styles */
+    section {
+        padding: 0rem 6.3rem;
+    }
+
+    button {
+        background: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
 `;
 
 export default GlobalStyle;
