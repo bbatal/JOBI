@@ -36,28 +36,78 @@ const GlobalStyle = createGlobalStyle`
         --primary-darkGreen: #244034;
         --primary-lightGreen: #d2f34c;
         --primary-grassGreen: #00bf58;
+        --primary-gray: #c4c4c4;
 
         --secondary-gray: #eff6f3;
         --secondary-beige: #f8fde4;
         --secondary-brown: #755146;
         --secondary-black: #000;
         --secondary-green: #31795a;
+
+        --tertiary-lightGray: #f5f5f5;
     }
 
     h1, 
     h2, 
     h3 {
         font-family: "EB Garamond";
+        position: relative;
+        z-index: 15;
+        padding: 0;
+        margin: 0;
     }
 
+    h2,
     h4,
     h5,
     h6 {
         font-family: "GorditaBold";
+        position: relative;
+        z-index: 15;
+        padding: 0;
+        margin: 0;
     }
 
-    p {
-        font-family: "Gordita"
+    p,
+    h3 {
+        font-family: "Gordita";
+        position: relative;
+        z-index: 15;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    /* responsive image */
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    .wrapper {
+        max-width: 1200px;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    /* temporary global styles */
+    section {
+        padding: 0rem 6.3rem;
+    }
+
+    button {
+        background: transparent;
+        border: none;
+        cursor: pointer;
     }
 
 `;
