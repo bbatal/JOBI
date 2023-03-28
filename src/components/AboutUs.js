@@ -73,7 +73,7 @@ const Section = styled.section`
     display: flex; 
     justify-content: center;
     align-items: start;
-    padding: 9rem 0;
+    padding: 4rem 0;
     gap: 3rem;
 `
 
