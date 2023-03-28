@@ -10,7 +10,7 @@ function HowItWorks() {
   return (
     <Section id='howItWorks' className='wrapper'>
         <TopSection>
-            <button><img src={playBtn} alt="" /></button>
+            <button><img src={playBtn} alt="placeholder" /></button>
             <h3>Let's get started It's <span>simple.</span></h3>
             <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga nemo autem blanditiis eos distinctio quaerat? Ve!

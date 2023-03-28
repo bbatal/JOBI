@@ -9,7 +9,7 @@ function JobListing() {
         <Box>
             <h2>New Job Listing</h2>
             {/* TODO - refactor below into a component */}
-            <Link href='#'><p>Explore all jobs</p> <img src={chevron} alt="chevron right" /></Link>
+            <Link href='about-us'><p>Explore all jobs</p> <img src={chevron} alt="chevron right" /></Link>
         </Box>
 
         <Ul>

@@ -1,7 +1,6 @@
 import bannerBottom from '../assets/banner-bottom.jpg';
 
 import styled from 'styled-components';
-import Collaboration from './Collaboration';
 
 function Banner() {
   return (

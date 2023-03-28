@@ -23,26 +23,26 @@ function Footer() {
 
             <LinksContainer>
                 <li><h3>Links</h3></li>
-                <li><a>Pricing</a></li>
-                <li><a>About us</a></li>
-                <li><a>Careers</a></li>
-                <li><a>Blog</a></li>
+                <li><a href='/about-us'>Pricing</a></li>
+                <li><a href='/about-us'>About us</a></li>
+                <li><a href='/about-us'>Careers</a></li>
+                <li><a href='/about-us'>Blog</a></li>
             </LinksContainer>
             <LinksContainer>
                 <li><h3>Products</h3></li>
-                <li><a>Take the tour</a></li>
-                <li><a>Live chat</a></li>
-                <li><a>Self-service</a></li>
-                <li><a>Mobile</a></li>
-                <li><a>Collaboration</a></li>
-                <li><a>Reviews</a></li>
+                <li><a href='/about-us'>Take the tour</a></li>
+                <li><a href='/about-us'>Live chat</a></li>
+                <li><a href='/about-us'>Self-service</a></li>
+                <li><a href='/about-us'>Mobile</a></li>
+                <li><a href='/about-us'>Collaboration</a></li>
+                <li><a href='/about-us'>Reviews</a></li>
             </LinksContainer>
             <LinksContainer>
                 <li><h3>Legal</h3></li>
-                <li><a>Terms of use</a></li>
-                <li><a>Terms & Conditions</a></li>
-                <li><a>Privacy</a></li>
-                <li><a>Cookie Policy</a></li>
+                <li><a href='/about-us'>Terms of use</a></li>
+                <li><a href='/about-us'>Terms & Conditions</a></li>
+                <li><a href='/about-us'>Privacy</a></li>
+                <li><a href='/about-us'>Cookie Policy</a></li>
             </LinksContainer>
 
             <Newsletter>

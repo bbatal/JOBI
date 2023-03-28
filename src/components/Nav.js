@@ -17,26 +17,26 @@ function Nav() {
   return (
     <div className='wrapper'>
     <Navigation>
-        <Logo href='#'><img src={logo} alt="business logo" /></Logo>
+        <Logo href='about-us'><img src={logo} alt="business logo" /></Logo>
         <Hamburger onClick={() => setOpen(prev => !prev)}>HAM</Hamburger>
         
         {open &&
         <>
         <Ul>       
             <Li>
-                <a href='#'>Home</a>
+                <a href='about-us'>Home</a>
             </Li>
             <Li>
-                <a href='#'>Job</a>
+                <a href='about-us'>Job</a>
             </Li>
             <Li>
-                <a href='#'>Explore</a>
+                <a href='about-us'>Explore</a>
             </Li>
             <Li>
-                <a href='#'>Category</a>
+                <a href='about-us'>Category</a>
             </Li>
             <Li>
-                <a href='#'>Pages</a>
+                <a href='about-us'>Pages</a>
             </Li>
         </Ul>
 

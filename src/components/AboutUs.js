@@ -45,7 +45,7 @@ function AboutUs() {
                 <ItemA>
                     <img src={profile1} alt="placeholder"/>
 
-                    <Swoop src={swoopShape} />
+                    <Swoop src={swoopShape} alt="placeholder" />
                     <Card1 src={card1} alt="placeholder" />
                     
                 </ItemA>

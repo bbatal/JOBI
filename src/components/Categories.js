@@ -17,7 +17,7 @@ function Categories() {
         <div className='wrapper'>
           <Box>
             <H2>Most Demanding Categories.</H2>
-            <Link href='#'><p>Explore all fields</p> <img src={chevronRight} alt="chevron right" /></Link>
+            <Link href='/about-us'><p>Explore all fields</p> <img src={chevronRight} alt="chevron right" /></Link>
           </Box>
         
         <Ul>
