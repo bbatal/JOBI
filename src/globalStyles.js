@@ -57,7 +57,7 @@ const GlobalStyle = createGlobalStyle`
         margin: 0;
     }
 
-    h2
+    h2,
     h4,
     h5,
     h6 {
@@ -68,7 +68,8 @@ const GlobalStyle = createGlobalStyle`
         margin: 0;
     }
 
-    p {
+    p,
+    h3 {
         font-family: "Gordita";
         position: relative;
         z-index: 15;
