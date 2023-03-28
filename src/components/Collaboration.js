@@ -25,7 +25,7 @@ export default Collaboration;
 
 // make reusable
 const Container = styled.section`
-  padding: 9rem 6.3rem;
+  padding: 9rem 6.3rem 6rem 6.3rem;
   display: flex;
   align-items: center;
   justify-content: space-between;

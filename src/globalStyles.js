@@ -57,7 +57,7 @@ const GlobalStyle = createGlobalStyle`
         margin: 0;
     }
 
-
+    h2
     h4,
     h5,
     h6 {
