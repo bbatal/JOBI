@@ -1,5 +1,5 @@
 // images
-import chevronUp from '../assets/chevron-up.png';
+// import chevronUp from '../assets/chevron-up.png';
 import chevronDown from '../assets/chevron-down.png';
 import dotPattern from '../assets/dot-pattern.png';
 import swoopShape from '../assets/swoop-shape.png';
