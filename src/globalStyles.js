@@ -45,6 +45,7 @@ const GlobalStyle = createGlobalStyle`
         --secondary-green: #31795a;
 
         --tertiary-lightGray: #f5f5f5;
+        --tertiary-limeGreen: #D2F34C;
     }
 
     h1, 
