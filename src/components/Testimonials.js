@@ -9,7 +9,8 @@ import styled from 'styled-components';
 
 function Testimonials() {
   return (
-    <Container id="testimonials" className='wrapper'>
+    <Container id="testimonials">
+        <div className='wrapper'>
         <Box>
             <h2>What our clients Think of us?</h2>
             <div className="carousal-buttons">
@@ -49,6 +50,7 @@ function Testimonials() {
                 </Box1>
             </Card>
         </Ul>
+        </div>
     </Container>
   )
 }

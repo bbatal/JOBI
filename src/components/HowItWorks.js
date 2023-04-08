@@ -8,7 +8,8 @@ import styled from 'styled-components';
 
 function HowItWorks() {
   return (
-    <Section id='howItWorks' className='wrapper'>
+    <Section id='howItWorks'>
+        <Div className='wrapper'>
         <TopSection>
             <button><img src={playBtn} alt="placeholder" /></button>
             <h3>Let's get started It's <span>simple.</span></h3>
@@ -39,6 +40,7 @@ function HowItWorks() {
                 </div>
             </Li>
         </Ul>
+        </Div>
     </Section>
   )
 }
@@ -48,6 +50,9 @@ export default HowItWorks
 // TODO - add bg image
 const Section = styled.section`
     background-color: gray;
+`
+
+const Div = styled.div`
     display: flex;
     flex-direction: column;
     align-items: end;
@@ -62,7 +67,6 @@ const TopSection = styled.div`
     display: flex;
     flex-direction: column;
     align-items: start;
-    padding-right: 7rem;
     gap: 2rem;
 
     img {

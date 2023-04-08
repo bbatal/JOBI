@@ -10,7 +10,8 @@ import styled from 'styled-components';
 
 function Partners() {
   return (
-    <Box className='wrapper'>
+    <Box>
+      <div className='wrapper'>
         <Ul>
             <Li><img src={google} alt="google logo" /></Li>
             <Li><img src={shipbob} alt="shipbob logo" /></Li>
@@ -19,6 +20,7 @@ function Partners() {
             <Li><img src={vine} alt="vine logo" /></Li>
             <Li><img src={airbnb} alt="airbnb logo" /></Li>
         </Ul>
+        </div>
     </Box>
   )
 }

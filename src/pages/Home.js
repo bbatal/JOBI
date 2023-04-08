@@ -20,7 +20,8 @@ import hero from '../assets/hero.jpg';
 function Home() {
   return (
     <>
-    <Header className="wrapper">
+    <Header>
+        <div className="wrapper">
         <Nav />
         <Box1>
             <H1>Find & Hire Experts for any Job.</H1>
@@ -43,6 +44,7 @@ function Home() {
                 </Li>
             </Ul>
         </Box2>
+        </div>
     </Header>
     <main>
         <Partners />

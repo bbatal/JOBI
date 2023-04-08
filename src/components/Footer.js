@@ -10,7 +10,8 @@ import styled from 'styled-components';
 function Footer() {
   return (
  
-    <Container className='wrapper'>
+    <FooterContainer>
+        <Div className='wrapper'>
         <TopBox className="top-footer">
             <LogoContainer>
                 <li>
@@ -67,18 +68,22 @@ function Footer() {
                 <li><img src={pinterest} alt="social media link"/></li>
             </SocialMedia>
         </BottomFooter>
-    </Container>
+        </Div>
+    </FooterContainer>
   )
 }
 
 export default Footer;
 
-const Container = styled.div`
+const FooterContainer = styled.footer`
+    background-color: var(--primary-darkGreen);
+`
+
+const Div = styled.div`
     padding: 5rem 6.3rem 2rem 6.3rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: var(--primary-darkGreen);
 `
 
 const TopBox = styled.div`
