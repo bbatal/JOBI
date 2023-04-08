@@ -41,7 +41,6 @@ export default Header
 
 const HeaderContainer = styled.header`
     background: no-repeat center/cover url(${hero});
-    position: relative;
     color: white;
 
     /* dim overlay */

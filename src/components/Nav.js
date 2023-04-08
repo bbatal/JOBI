@@ -1,5 +1,6 @@
 // images
 import logo from '../assets/jobi-logo.png';
+import hamburger from '../assets/hamburger.svg';
 
 // dependencies
 import styled from 'styled-components';
@@ -8,17 +9,26 @@ import { useState } from 'react';
 function Nav() {
     const [open, setOpen] = useState(true);
     // TODO -- make animation and background fade
+    // TODO -- set hamburger image as background on button
+    // throttle window resize
+    // 
+    const handleResize = () => {
+        if(window.innerWidth < 900) {
+            setOpen(false);
+        } else {
+            setOpen(true);
+        }
+    }
 
-    // TODO: use window.resize with throttling to turn open variable to true for screen sizes greater than mobile
-    // useEffect(() => {
-    //     window.addEventListener('')
-    // }, [])
+    window.addEventListener('resize', handleResize);
+
+   
 
   return (
     <div className='wrapper'>
     <Navigation>
         <Logo href='about-us'><img src={logo} alt="business logo" /></Logo>
-        <Hamburger onClick={() => setOpen(prev => !prev)}>HAM</Hamburger>
+        <Hamburger onClick={() => setOpen(prev => !prev)}></Hamburger>
         
         {open &&
         <>
@@ -68,9 +78,12 @@ const Navigation = styled.nav`
 `
 
 const Hamburger = styled.button`
-    z-index: 25;
+    z-index: 30;
+    color: white;
+    background: url(${hamburger})
+    content: "";
 
-    @media (min-width: 700px) {
+    @media (min-width: 900px) {
         display: none;
     }
 `
@@ -80,8 +93,9 @@ const Ul = styled.ul`
     flex: 2 0 auto;
     justify-content: center;
     gap: 3%;
+    
 
-    @media (max-width: 700px) {
+    @media (max-width: 900px) {
         display: flex;
         flex-direction: column;
             // adjusting display/alignment
@@ -96,10 +110,10 @@ const Ul = styled.ul`
         // positioning
         position: absolute;
         top: 0;
-        left: 35%;
+        left: 45%;
         right: 0;
         bottom: 0;
-        z-index: 15;
+        z-index: 25;
     }
 `
 
