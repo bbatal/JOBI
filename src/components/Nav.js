@@ -80,12 +80,12 @@ const Navigation = styled.nav`
 const Hamburger = styled.button`
     z-index: 30;
     color: white;
-    background: url(${hamburger})
+    background: url(${hamburger});
     content: "";
 
-    @media (min-width: 900px) {
+    /* @media (min-width: 900px) {
         display: none;
-    }
+    } */
 `
 
 const Ul = styled.ul`

@@ -3,7 +3,7 @@ import arrowBack from '../assets/back-arrow-icon-white.png';
 import arrowForward from '../assets/next-arrow-icon.png';
 import rating from '../assets/rating-icon.png';
 import quotes from '../assets/quote-icon.png';
-import boardroom from '../assets/boardroom.jpg';
+// import boardroom from '../assets/boardroom.jpg';
 
 import styled from 'styled-components';
 
@@ -58,7 +58,7 @@ function Testimonials() {
 export default Testimonials;
 
 const Container = styled.section`
-    background-image: url(${boardroom});
+    background-image: url(${"boardroom"});
     background-repeat: no-repeat;
     background-size: cover;
     padding: 5rem 6.3rem;
