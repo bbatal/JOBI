@@ -1,6 +1,6 @@
 // components
-import Nav from "../components/Nav";
-import Search from "../components/Search";
+import Nav from "./Nav";
+import Search from "./Search";
 
 // dependencies
 import styled from 'styled-components';
