@@ -9,8 +9,16 @@ import bar from '../assets/bar.png';
 
 import styled from 'styled-components';
 
+interface containerColor {
+   colorValue: string;
+}
+
+
 
 function Categories() {
+
+  // const colorValue = ["(231, 250, 252)", "(255, 249, 234)", "255, 249, 234", "(229, 246, 231)", "(246, 243, 254)", "(255, 241, 232)"];
+
   return (
     <Container>
 
@@ -87,9 +95,10 @@ const Ul = styled.ul`
   margin: 3rem 0;
 `
 
-const Li = styled.li.attrs(props => ({
+const Li = styled.li.attrs<containerColor>(props => ({
+  colorValue: props.colorValue,
   title: props.colorValue,
-}))`
+}))<containerColor>`
   background-color: ${props => props.colorValue};
   display: flex;
   flex-basis: max-content;
