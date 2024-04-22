@@ -1,6 +1,6 @@
 // components
 import Nav from "./Nav";
-import Search from "./Search";
+import Headline from "./Headline";
 
 // dependencies
 import styled from 'styled-components';
@@ -11,11 +11,12 @@ function Header() {
     <HeaderContainer>
         <div className="wrapper">
         <Nav />
-        <Box1>
+        <Headline fontSize={"3.5rem"} title={"Find & Hire Experts for any Job."} subtitle={"Unlock your potential with quality job & earn from world leading brands"} />
+        {/* <Box1>
             <H1>Find & Hire Experts for any Job.</H1>
             <p>Unlock your potential with quality job & earn from world leading brands</p>
             <Search />
-        </Box1>
+        </Box1> */}
         <Box2>
             <Ul>
                 <Li>
@@ -56,24 +57,6 @@ const HeaderContainer = styled.header`
     }
 `
 
-const H1 = styled.h1`
-        text-align: center;
-        font-size: 3.5rem;
-        position: relative;
-        z-index: 10;
-        max-width: 650px;
-
-        /* TODO: find a slightly thicker gordita */
-        font-family: "Gordita";
-`
-
-const Box1 = styled.div`
-    margin: 5rem auto 3rem auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-`
 
 const Box2 = styled.div`
     margin: 0 auto;
