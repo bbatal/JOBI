@@ -12,7 +12,11 @@ function Header() {
         <FlexContainer className="wrapper">
         <Nav />
         <Box1>
-        <Headline fontSize={"3.5rem"} title={"Find & Hire Experts for any Job."} subtitle={"Unlock your potential with quality job & earn from world leading brands"} />
+        <Headline 
+            fontSize={"3.5rem"} 
+            title={"Find & Hire Experts for any Job."} 
+            subtitle={"Unlock your potential with quality job & earn from world leading brands"}
+            fontFamily={"Gordita"} />
         </Box1>
         <Box2>
             <Ul>

@@ -1,6 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 import gorditaRegular from './fonts/gorditaRegular.otf';
 import gorditaBold from './fonts/gorditaBold.otf';
+import EbGaramond from './fonts/EBGaramond-VariableFont_wght.ttf';
 
 const GlobalStyle = createGlobalStyle`
     /* Normalize */
@@ -29,6 +30,12 @@ const GlobalStyle = createGlobalStyle`
         url(${gorditaBold}) format("opentype");
     }
 
+    @font-face {
+        font-family: "EbGaramond";
+        src: local("EbGaramond"),
+        url(${EbGaramond}) format("opentype");
+    }
+
 
     /* GENERAL STYLES */
     /* colors */
@@ -50,7 +57,7 @@ const GlobalStyle = createGlobalStyle`
     h1, 
     h2, 
     h3 {
-        font-family: "EB Garamond";
+        font-family: "EbGaramond";
         position: relative;
         z-index: 15;
         padding: 0;
