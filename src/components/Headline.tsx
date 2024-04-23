@@ -27,7 +27,6 @@ const H1 = styled.h1`
 `
 
 const Box = styled.div`
-    margin: 5rem auto 3rem auto;
     display: flex;
     flex-direction: column;
     align-items: center;

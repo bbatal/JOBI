@@ -9,14 +9,11 @@ import hero from '../assets/hero.jpg';
 function Header() {
   return (
     <HeaderContainer>
-        <div className="wrapper">
+        <FlexContainer className="wrapper">
         <Nav />
+        <Box1>
         <Headline fontSize={"3.5rem"} title={"Find & Hire Experts for any Job."} subtitle={"Unlock your potential with quality job & earn from world leading brands"} />
-        {/* <Box1>
-            <H1>Find & Hire Experts for any Job.</H1>
-            <p>Unlock your potential with quality job & earn from world leading brands</p>
-            <Search />
-        </Box1> */}
+        </Box1>
         <Box2>
             <Ul>
                 <Li>
@@ -33,7 +30,7 @@ function Header() {
                 </Li>
             </Ul>
         </Box2>
-        </div>
+        </FlexContainer>
     </HeaderContainer>
   )
 }
@@ -43,6 +40,7 @@ export default Header
 const HeaderContainer = styled.header`
     background: no-repeat center/cover url(${hero});
     color: white;
+    min-height: 100vh;
 
     /* dim overlay */
     &:before {
@@ -55,6 +53,10 @@ const HeaderContainer = styled.header`
         background: black;
         opacity: 0.6;
     }
+`
+
+const Box1 = styled.div`   
+    margin: auto;
 `
 
 
@@ -78,6 +80,13 @@ const Li = styled.li`
 
 const Title = styled.p`
     font-size: 2rem;
+`
+
+const FlexContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
 `
 
 
