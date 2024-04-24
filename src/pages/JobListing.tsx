@@ -1,4 +1,7 @@
 import Headline from '../components/Headline';
+import NavJobListing from '../components/NavJobListing';
+
+// Dependencies
 import styled from 'styled-components';
 
 // assets
@@ -9,11 +12,12 @@ function JobListing() {
   return (
     <>
     <Container>
-    <Headline 
-      title={"Job Listing"} 
-      subtitle={"We delivered blazing fast & striking work solution"} 
-      fontSize={"64px"}
-      fontFamily={"EbGaramond"} />
+      <NavJobListing />
+      <Headline 
+        title={"Job Listing"} 
+        subtitle={"We delivered blazing fast & striking work solution"} 
+        fontSize={"64px"}
+        fontFamily={"EbGaramond"} />
     
     </Container>
     </>
@@ -25,6 +29,7 @@ export default JobListing;
 const Container = styled.div`
   background-color: #244034;
   position: relative;
+  padding: 4.5rem 0;
 
   &:before {
     content: "";

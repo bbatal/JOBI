@@ -2,6 +2,7 @@ import { createGlobalStyle } from 'styled-components';
 import gorditaRegular from './fonts/gorditaRegular.otf';
 import gorditaBold from './fonts/gorditaBold.otf';
 import EbGaramond from './fonts/EBGaramond-VariableFont_wght.ttf';
+import AlikeAngular from './fonts/AlikeAngular-Regular.ttf';
 
 const GlobalStyle = createGlobalStyle`
     /* Normalize */
@@ -34,6 +35,12 @@ const GlobalStyle = createGlobalStyle`
         font-family: "EbGaramond";
         src: local("EbGaramond"),
         url(${EbGaramond}) format("opentype");
+    }
+
+    @font-face {
+        font-family: "AlikeAngular";
+        src: local("AlikeAngular"),
+        url(${AlikeAngular}) format("opentype");
     }
 
 
