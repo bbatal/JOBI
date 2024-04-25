@@ -20,6 +20,9 @@ export default function Headline({ fontSize, title, subtitle, fontFamily }: Head
 
 const P = styled.p`
     color: #fff;
+    font-family: "Gordita";
+    font-weight: 400;
+    font-size: 22px;
 `
 
 const H1 = styled.h1`
@@ -29,6 +32,7 @@ const H1 = styled.h1`
         max-width: 650px;
         color: #fff;
         margin-bottom: 20px;
+        font-weight: 500;
 `
 
 const Box = styled.div`

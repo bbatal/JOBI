@@ -27,9 +27,13 @@ function JobListing() {
 export default JobListing;
 
 const Container = styled.div`
-  background-color: #244034;
+  background-color: var(--primary-darkGreen);
   position: relative;
-  padding: 4.5rem 0;
+  padding: 3rem 0 7rem 0;
+  min-height: 554px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   &:before {
     content: "";

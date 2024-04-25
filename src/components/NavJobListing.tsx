@@ -46,6 +46,7 @@ export default function NavJobListing() {
         <Item>
             <HireButtonExtended>Hire Top Talents</HireButtonExtended>
         </Item>
+        <Item className="toggle"><a href="/"><i className="fas fa-bars"></i></a></Item>
     </List>
     </Nav>
   )
@@ -53,6 +54,7 @@ export default function NavJobListing() {
 
 const Nav = styled.nav`
     margin: 0 3rem;
+    font-family: "Gordita";
 `
 
 const List = styled.ul`
@@ -70,7 +72,7 @@ const Text = styled.span`
 `
 
 const Button = styled.button`
-    color: #D2F34C;
+    color: var(--primary-lightGreen);
     border-radius: 50px;
 `
 
@@ -78,21 +80,37 @@ const CategoriesExtended = styled(Button)`
     display: flex;
     align-items: center;
     padding: 10px 15px;
-    background-color: rgb(58,83,72);
+    background-color: var(--tertiary-lightGreen);
 `
 
 const HireButtonExtended = styled(Button)`
     color: black;
     padding: 10px 15px;
-    background-color: #D2F34C;
+    background-color: var(--primary-lightGreen);
 `
 
 const Logo = styled.li`
     flex-grow: 1;
 `
 const Login = styled.li`
-    flex-grow: 3;
+    flex-grow: 7;
     text-align: end;
+
+    button {
+        position: relative;
+        margin-left: 2em;
+    }
+
+    button:after {
+        position: absolute;
+        content: "";
+        height: 70%;
+        width: 1px;
+        left: -1em;
+        top: 2px;
+        bottom: 0;
+        background-color: var(--tertiary-lightGreen);
+    }
 `
 
 const Categories = styled.li`
@@ -101,4 +119,5 @@ const Categories = styled.li`
 
 const Item = styled.li`
     flex-grow: 0;
+    margin-left: 2em;
 `
