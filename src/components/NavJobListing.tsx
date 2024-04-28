@@ -72,6 +72,12 @@ export default function NavJobListing() {
 const Nav = styled.nav`
     margin: 0 3rem;
     font-family: "Gordita";
+
+    @media ${device.sm} {
+        background-color: #222;
+        width: 100%;
+        height: min-content;
+    }
 `
 
 const List = styled.ul`
@@ -80,16 +86,20 @@ const List = styled.ul`
     align-items: center;
     color: #fff;
     max-width: 1492px;
+    z-index: 30;
 
     @media ${device.sm} {
         flex-wrap: wrap;
         position: absolute;
-        top: 2em;
-        right: 2em;
-        left: 2em;
+        top: 0;
+        right: 0;
+        left: 0;
+        padding: 2em 2em 0 2em;
+        background-color: #222;
 
         li a {
             display: block;
+            padding: 15px 5px;
         }
     }
 `
