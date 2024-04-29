@@ -95,7 +95,7 @@ const List = styled.ul`
         right: 0;
         left: 0;
         padding: 2em 2em 0 2em;
-        background-color: #222;
+        /* background-color: #222; */
 
         li a {
             display: block;
