@@ -22,7 +22,8 @@ const P = styled.p`
     color: #fff;
     font-family: "Gordita";
     font-weight: 400;
-    font-size: 22px;
+    font-size: 1.3em;
+    text-align: center;
 `
 
 const H1 = styled.h1`
@@ -33,6 +34,8 @@ const H1 = styled.h1`
         color: #fff;
         margin-bottom: 20px;
         font-weight: 500;
+
+        
 `
 
 const Box = styled.div`

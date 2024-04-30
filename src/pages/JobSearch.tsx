@@ -16,7 +16,7 @@ function JobListing() {
       <Headline 
         title={"Job Listing"} 
         subtitle={"We delivered blazing fast & striking work solution"} 
-        fontSize={"64px"}
+        fontSize={"4.3em"}
         fontFamily={"EbGaramond"} />
     
     </Container>

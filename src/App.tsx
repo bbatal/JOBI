@@ -1,6 +1,6 @@
 // pages
 import Home from "./pages/Home";
-import JobListing from "./pages/JobListing";
+import JobSearch from "./pages/JobSearch";
 import JobDetails from "./pages/JobDetails";
 
 // React Router
@@ -12,7 +12,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/job-list" element={<JobListing />} />
+        <Route path="/job-search" element={<JobSearch />} />
         <Route path="/job-details" element={<JobDetails />} />
         <Route path="/*" element={<Error />} />
       </Routes>
