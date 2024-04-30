@@ -88,18 +88,22 @@ const List = styled.ul`
     max-width: 1492px;
     z-index: 30;
 
-    @media ${device.sm} {
+    @media ${device.mdl} {
         flex-wrap: wrap;
         position: absolute;
         top: 0;
         right: 0;
         left: 0;
         padding: 2em 2em 0 2em;
-        /* background-color: #222; */
 
         li a {
             display: block;
-            padding: 15px 5px;
+            padding: 20px 0px;
+        }
+
+        :has(li.active) {
+            padding: 2em;
+            background-color: #222;
         }
     }
 `
@@ -126,6 +130,10 @@ const HireButtonExtended = styled(Button)`
     color: black;
     padding: 10px 15px;
     background-color: var(--primary-lightGreen);
+
+    @media ${device.sm} {
+        margin: 20px 0;
+    }
 `
 
 const Logo = styled.li`
@@ -151,22 +159,36 @@ const Login = styled.li`
         background-color: var(--tertiary-lightGreen);
     }
 
+      @media ${device.mdl} {
+        margin-right: 1em;
+
+       a {
+            display: inline !important;
+        }       
+    }
+
     @media ${device.sm} {
         display: none;
         width: 100%;
         order: 2;
         text-align: center;
 
+        button {
+        margin-left: 0;
+        margin: 20px 0px;
+        }
+
         button:after {
         height: 1px;
-        width: 70%;
-        left: 50%;
-        top: 0px;
+        width: 300%;
+        left: -100%;
+        top: -100%;
         bottom: 5px;
     }
 
-        &.active {
-            display: block;
+        &.active,
+        &.active a {
+            display: block !important;
         }
     }
 `
@@ -183,11 +205,12 @@ const Item = styled.li`
     flex-grow: 0;
     margin-left: 2em;
 
-    @media ${device.sm} {
+    @media ${device.mdl} {
         order: 3;
         width: 100%;
         text-align: center;
         display: none;
+        margin-left: 0;
 
         &.active {
             display: block;
@@ -201,7 +224,7 @@ const Toggle = styled(Item)`
     z-index: 10;
     font-size: 20px;
 
-    @media ${device.sm} {
+    @media ${device.mdl} {
         display: block;
         width: min-content;
         order: 1;
